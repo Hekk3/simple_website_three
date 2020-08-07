@@ -1596,6 +1596,7 @@ color: #8D96BD;
 	right: 10%;
 	top: 40%;
 	background: #6C8BFF;
+	display: none;
 }
 .get-cloud6 {
 	width: 115.57px;
@@ -1878,6 +1879,29 @@ color: #8D96BD;
 
 /*responsove*/
 
+@media (max-width: 1150px) {
+	.slider-main-content {
+		grid-template-columns: 1fr;
+	}
+
+	.slider-photo {
+		display: none;
+	}
+
+	.slider-text p {
+		margin: 20px 0 0 0;
+	}
+
+	.slider-text-buttons {
+		grid-row: 1/2;
+		text-align: center;
+	}
+
+	.slider-buttons {
+		justify-content: space-evenly;
+	}
+}
+
 @media (max-width: 1230px) {
 	.logos-firms {
 		width: 78%;
@@ -1894,7 +1918,11 @@ color: #8D96BD;
 	}
 }
 
-
+@media (max-width: 1310px) {
+	.slider-text-buttons {
+		grid-template-rows: 1fr 60% 1fr;
+}
+}
 
 
 
